@@ -3,16 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    overflow-x:hidden; 
-    overflow-y:auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     font-family: 'EliceDigitalBaeum_Regular';
     background-color: #F4F4F2;
     color: #2C2828;
+    width: 100%;
 
 }
-a {color: inherit; text-decoration: none;}
-ul,li {list-style: none;}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
 
 
 /* font-family: 'Encode Sans Expanded', sans-serif; */
@@ -29,11 +39,13 @@ ul,li {list-style: none;}
     background-repeat: no-repeat;
     background-image: url(../img/hello-mainimg.png);
 }
+
 #main .hello .bubble {
     position: absolute;
     top: 0;
     z-index: 100;
 }
+
 #main .hello .name {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-size: 1.9rem;
@@ -41,18 +53,20 @@ ul,li {list-style: none;}
     display: inline-block;
     vertical-align: top;
 }
+
 #main .hello .menu {
     text-align: right;
-    display: inline-block;
     float: right;
     font-family: 'EliceDigitalBaeum_Bold';
-    
+
 }
+
 #main .hello .menu ul li img {
     display: block;
     float: right;
     margin-bottom: 5px;
 }
+
 #main .hello .menu ul li a {
     display: block;
     clear: both;
@@ -68,9 +82,11 @@ ul,li {list-style: none;}
     position: absolute;
     bottom: 10%;
 }
+
 #main .hello .subtitle {
     display: flex;
 }
+
 #main .hello .subtitle .this {
     position: absolute;
     font-family: 'EliceDigitalBaeum_Regular';
@@ -80,6 +96,7 @@ ul,li {list-style: none;}
     font-size: 2.5rem;
     right: 16%;
 }
+
 #main .hello .subtitle .myworks {
     font-family: 'Encode Sans Expanded', sans-serif;
     position: absolute;
@@ -92,6 +109,7 @@ ul,li {list-style: none;}
     padding: 8px 20px;
     margin-left: 10px;
 }
+
 #main .hello .flower {
     position: absolute;
     right: 4%;
@@ -100,10 +118,12 @@ ul,li {list-style: none;}
 
 /* bar */
 #main .bar {
-    width: 100%; height: 74px;
+    width: 100%;
+    height: 74px;
     background-color: #F2D4CD;
     overflow: hidden;
 }
+
 #main .bar img {
     padding: 18px 45px;
     overflow: hidden;
@@ -113,10 +133,12 @@ ul,li {list-style: none;}
 #main .welcome {
     height: 60vh;
 }
+
 #main .welcome .bear {
     text-align: center;
     padding: 20vh 0 1vh 0;
 }
+
 #main .welcome .txt {
     font-family: 'EliceDigitalBaeum_Regular';
     text-align: center;
@@ -126,68 +148,80 @@ ul,li {list-style: none;}
 
 /* about */
 #main .about {
-    height: 300vh;
-    
+    height: 250vh;
+
 }
+
 #main .about #wrap {
     position: relative;
 }
+
 #main .about img {
     margin: 0 45px 20px 0;
 }
+
 #main .about .tt {
     display: inline-block;
     vertical-align: top;
-    
+
 }
+
 #main .about .tt .num {
-    margin-top: 20px; 
+    margin-top: 20px;
     font-size: 3rem;
     color: #F2D4CD;
     line-height: 0.5;
 }
-#main .about .tt2 {
-}
+
+#main .about .tt2 {}
+
 #main .about .tt2 .num {
     margin-top: 0px;
 }
+
 #main .about .tt .title {
     font-family: 'Tusker Grotesk 7700';
     font-size: 5rem;
     color: #DDA2A2;
     margin-bottom: 20px;
 }
+
 #main .about .tt .txt {
     font-size: 1rem;
 }
+
 #main .about .aboutimg1 {
     position: absolute;
     right: 0;
-    top: 40%;    
+    top: 40%;
 }
+
 #main .about .aboutimg2 {
     position: absolute;
     right: 20%;
     top: 82.4%;
 }
-#main .about .aboutimg {
-}
+
+#main .about .aboutimg {}
 
 #main .about .aboutimg .pigtail {
-    top : 90%;
+    top: 100%;
     right: 34%;
 }
+
 #main .about .aboutimg .dia {
-    top: 100%;
-    right: 36%;
+    top: 93%;
+    right: 35%;
 }
+
 #main .about .aboutimg .flower {
-    top: 107%;
+    top: 100%;
     right: 41%;
 }
+
 #main .about .aboutimg3 {
     position: absolute;
-    top: 134.5%;
+    top: 135.5%;
     width: 856px;
     height: 537px;
     overflow: hidden;
@@ -200,7 +234,7 @@ ul,li {list-style: none;}
 
 #main .about .tt3 {
     position: absolute;
-    bottom: -78%;
+    bottom: -79.5%;
     right: 14%;
 }
 
@@ -209,8 +243,822 @@ ul,li {list-style: none;}
     right: 7%;
     bottom: -55%;
 }
+
 #main .about .greensp {
     position: absolute;
     right: 12%;
     bottom: -65%;
+}
+
+/* meet */
+#main .meet {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/hello-mainimg.png);
+}
+
+#main .meet .title {
+    text-align: center;
+    color: #fff;
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 11.1rem;
+}
+
+#main .meet .menu {
+    text-align: right;
+    float: right;
+    font-family: 'EliceDigitalBaeum_Bold';
+    margin-top: 350px;
+
+}
+
+#main .meet .menu ul li img {
+    display: block;
+    float: right;
+    margin-bottom: 5px;
+}
+
+#main .meet .menu ul li a {
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#main .meet .menu .active a {
+    font-size: 3rem;
+}
+
+/* meet */
+#main .meet2 {
+    position: relative;
+    height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/hello-mainimg.png);
+}
+
+#main .meet2 .menu {
+    text-align: right;
+    float: right;
+    font-family: 'EliceDigitalBaeum_Bold';
+    margin-top: 100px;
+
+}
+
+#main .meet2 .menu ul li img {
+    display: block;
+    float: right;
+    margin-bottom: 5px;
+}
+
+#main .meet2 .menu ul li a {
+    display: block;
+    clear: both;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+#main .meet2 .menu .active a {
+    font-size: 3rem;
+}
+
+/* reference */
+#main .referencejava,
+.referencejq {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 960px);
+}
+
+#main .referencejava .left {
+    background-image: linear-gradient(to top, #CDDFF0, #F0D3E3);
+    position: relative;
+}
+
+#main .referencejava .left .java {
+    padding: 20vh 0 0 5vh;
+}
+
+#main .referencejava .left .referimg1 {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+}
+
+#main .referencejava .left .referimg2 {
+    position: absolute;
+    top: 8%;
+    left: 12%;
+}
+
+#main .referencejava .left .referimg3 {
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+}
+
+#main .referencejava .right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main .referencejava .right .title {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 6rem;
+    line-height: 0.9;
+    color: #A7BDD5;
+}
+
+#main .referencejava .right .stitle {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 5rem;
+    -webkit-text-stroke: 1px #A7BDD5;
+    color: #F4F4F2;
+    margin-bottom: 30px;
+}
+
+#main .referencejava .right .desc {
+    font-size: 18px;
+    margin-bottom: 120px;
+}
+
+#main .referencejava .right .view {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 24px;
+    color: #F4F4F2;
+    border-radius: 50px;
+    padding: 8px 30px 9px;
+    background-color: #a7bdd5;
+}
+
+/* reference */
+#main .referencejq {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 960px);
+}
+
+#main .referencejq .left {
+    background-image: linear-gradient(to top, #F0D3E3, #F9ECE7, #FFFCEA);
+    position: relative;
+}
+
+#main .referencejq .left .java {
+    padding: 20vh 0 0 5vh;
+}
+
+#main .referencejq .left .referimg1 {
+    position: absolute;
+    top: 12%;
+    left: 5%;
+}
+
+#main .referencejq .left .referimg2 {
+    position: absolute;
+    top: 8%;
+    left: 12%;
+}
+
+#main .referencejq .left .referimg3 {
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+}
+
+#main .referencejq .right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main .referencejq .right .title {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 6rem;
+    line-height: 0.9;
+    color: #EBC87D;
+}
+
+#main .referencejq .right .stitle {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 5rem;
+    -webkit-text-stroke: 1px #EBC87D;
+    color: #F4F4F2;
+    margin-bottom: 30px;
+}
+
+#main .referencejq .right .desc {
+    font-size: 18px;
+    margin-bottom: 120px;
+}
+
+#main .referencejq .right .view {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 24px;
+    color: #F4F4F2;
+    border-radius: 50px;
+    padding: 8px 30px 9px;
+    background-color: #EBC87D;
+}
+
+/* reference */
+#main .sitephp {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 960px);
+}
+
+#main .sitephp .left {
+    height: 100vh;
+}
+
+#main .sitephp .right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#main .sitephp .right .title {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 6rem;
+    line-height: 0.9;
+    color: #EE6C65;
+}
+
+#main .sitephp .right .stitle {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 5rem;
+    -webkit-text-stroke: 1px #EE6C65;
+    color: #F4F4F2;
+    margin-bottom: 30px;
+}
+
+#main .sitephp .right .desc {
+    font-size: 18px;
+    margin-bottom: 120px;
+}
+
+#main .sitephp .right .view {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 24px;
+    color: #F4F4F2;
+    border-radius: 50px;
+    padding: 8px 30px 9px;
+    background-color: #EE6C65;
+}
+
+#main .sitephp .right .bear {
+    position: absolute;
+    top: 20%;
+    right: 25%;
+}
+
+#main .sitephp .right .flower {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+/* reference */
+#main .sitemega {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 960px);
+}
+
+#main .sitemega .left {
+    height: 100vh;
+}
+
+#main .sitemega .right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#main .sitemega .right .title {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 6rem;
+    line-height: 0.9;
+    color: #095D87;
+}
+
+#main .sitemega .right .stitle {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 5rem;
+    -webkit-text-stroke: 1px #095D87;
+    color: #F4F4F2;
+    margin-bottom: 30px;
+}
+
+#main .sitemega .right .desc {
+    font-size: 18px;
+    margin-bottom: 120px;
+}
+
+#main .sitemega .right .view {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 24px;
+    color: #F4F4F2;
+    border-radius: 50px;
+    padding: 8px 30px 9px;
+    background-color: #095D87;
+}
+
+#main .sitemega .right .bear {
+    position: absolute;
+    top: 20%;
+    right: 25%;
+}
+
+#main .sitemega .right .flower {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+}
+
+/* reference */
+#main .sitephp {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 960px);
+}
+
+#main .sitephp .left {
+    height: 100vh;
+    background-image: linear-gradient(to top, #A49AC9, #E4C4B1);
+}
+
+#main .sitephp .right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#main .sitephp .right .title {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 6rem;
+    line-height: 0.9;
+    color: #857CA7;
+}
+
+#main .sitephp .right .stitle {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 5rem;
+    -webkit-text-stroke: 1px #857CA7;
+    color: #F4F4F2;
+    margin-bottom: 30px;
+}
+
+#main .sitephp .right .desc {
+    font-size: 18px;
+    margin-bottom: 120px;
+}
+
+#main .sitephp .right .view {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 24px;
+    color: #F4F4F2;
+    border-radius: 50px;
+    padding: 8px 30px 9px;
+    background-color: #857CA7;
+}
+
+#main .sitephp .right .bear {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+
+/* reference */
+#main .sitereact {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 960px);
+}
+
+#main .sitereact .left {
+    height: 100vh;
+    position: relative;
+}
+
+#main .sitereact .left .php {
+    height: 100vh;
+}
+
+#main .sitereact .right {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#main .sitereact .right .title {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 6rem;
+    line-height: 0.9;
+    color: #C68AB8;
+}
+
+#main .sitereact .right .stitle {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 5rem;
+    -webkit-text-stroke: 1px #C68AB8;
+    color: #F4F4F2;
+    margin-bottom: 30px;
+}
+
+#main .sitereact .right .desc {
+    font-size: 18px;
+    margin-bottom: 120px;
+}
+
+#main .sitereact .right .view {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 24px;
+    color: #F4F4F2;
+    border-radius: 50px;
+    padding: 8px 30px 9px;
+    background-color: #C68AB8;
+}
+
+#main .sitereact .left .dia {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+
+#main .sitereact .left .flower {
+    position: absolute;
+    left: 10%;
+    bottom: 25%;
+    animation: rotate_image 10s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+    
+/* animation*/
+#main .animation {
+    height: 115vh;
+    position: relative;
+}
+
+#main .animation .but .gosite {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    color: #2C2828;
+    font-size: 1.6rem;
+    border: 1px solid #2C2828;
+    border-radius: 50px;
+    padding: 8px 20px;
+    position: absolute;
+    right: 1.5%;
+}
+#main .animation .but .flower {
+    position: absolute;
+    right: 3.8%;
+    top: 3.5%;
+}
+#main .animation .anibox {
+    display: grid;
+    grid-template-columns: repeat(3,600px);
+    grid-template-rows: 75vh;
+    gap:15px;
+}
+
+.boxani {
+    width: 600px;
+    margin-top: 80px;
+    height: 80vh;
+    background-image: linear-gradient(to top, #F3D3C8, #FFE3DB);
+    position: relative;
+  }
+  
+  .box {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .box::before {
+    content: "";
+    width: 49px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: shadow 0.58s linear infinite;
+  }
+  .box::after {
+    content: "";
+    background: #EE6C65;
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+    animation: load 0.58s linear infinite;
+  }
+  
+  @keyframes shadow {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  @keyframes load {
+    17% {
+      border-bottom-right-radius: 3px;
+    }
+    25% {
+      transform: translatey(9px) rotate(22.5deg);
+    }
+    50% {
+      transform: translatey(18px) scale(1, 0.9) rotate(45deg);
+      border-bottom-right-radius: 39px;
+    }
+    75% {
+      transform: translatey(9px) rotate(67.5deg);
+    }
+    100% {
+      transform: translatey(0px) rotate(90deg);
+    }
+  }
+
+  .boxani2 {
+    margin-top: 80px;
+    height: 80vh;
+    background-image: linear-gradient(to top, #A18CD1, #FDC2ED);
+    position: relative;
+  }
+  
+  .animation .bar {
+    width: 5px;
+    height: 400px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: bar 2s ease 100;
+  }
+  
+  @keyframes bar {
+    0% {
+      height: 0px;
+      width: 0px;
+      transform: rotate(0deg);
+    }
+    25% {
+      height: 400px;
+      width: 100px;
+      transform: rotate(0deg);
+    }
+    75% {
+      height: 400px;
+      width: 5px;
+      transform: rotate(180deg);
+    }
+    100% {
+      height: 0px;
+      width: 5px;
+      transform: rotate(180deg);
+    }
+  }
+
+
+#main .animation .boxani3 .back {
+    margin-top: 80px;
+    height: 80vh;
+    position: relative;
+    background: white;
+    animation: backdiv 2s infinite;
+}
+@keyframes backdiv {
+    50% {background: #ffe6f2;}
+}
+
+#main .animation .boxani3 .heart {
+    background-color: pink;
+    height: 50px; width: 50px;
+    top: 50vh;
+    right: 16%;
+    position: absolute;
+    transform: rotate(-45deg);
+    animation: beat 2s infinite;
+}
+@keyframes beat {
+    0% {transform: scale(1) rotate(-45deg);}
+    50% {transform: scale(0.6) rotate(-45deg);}
+} 
+#main .animation .boxani3 .heart::after {
+    background-color: pink;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: 0; left: 25px;
+}
+#main .animation .boxani3 .heart::before {
+    background-color: pink;
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 50px; height: 50px;
+    top: -25px; left: 0;
+}
+
+/* script */
+#main .script {
+    padding-top: 200px;
+}
+#main .script .mouse, .slider, .parallax, .game {
+    margin: 0 auto;
+    width: 1475px;
+}
+#main .script .top {
+    display: inline-block;
+
+}
+#main .script iframe {
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    border: 3px solid #DDA2A2;
+    margin-bottom: 120px;
+}
+#main .script .img {
+    display: inline-block;
+    margin-left: 20px;
+}
+#main .script .title em {
+    font-style: normal;
+    font-family: 'Tusker Grotesk 7600';
+    font-size: 92px;
+    color: #DDA2A2;
+    margin-right: 10px;
+}
+
+#main .script .title {
+    font-family: 'Tusker Grotesk 7600';
+    font-size: 78px;
+    -webkit-text-stroke: 1px #DDA2A2;
+    color: #F4F4F2;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#footer {
+    margin-top: 200px;
+    height: 200vh;
+    position: relative;
+}
+#footer .ftbox {
+    height: 97vh;
+    background-color: #E7AACD;
+    /* position: relative; */
+    border-bottom: 1px solid #2C2828;
+}
+
+#footer .ftimg1 {
+    position: absolute;
+    top: -5%;
+    left: 5%;
+}
+#footer .ftimg2 {
+    position: absolute;
+    top: -5%;
+    right: 20%;
+}
+#footer .ftimg3 {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+#footer .ftimg4 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+#footer .ftimg5 {
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+#footer .ftimg6 {
+    position: absolute;
+    top: 35.22%;
+    right: 15%;
+}
+#footer .ftbox .contact {
+    padding: 35vh 0 15vh;
+    text-align: center;
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 80px;
+}
+#footer .ftbox .ready {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 18px;
+    border: 1px solid #2C2828;
+    border-radius: 50px;
+    padding: 10px 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* #footer .ftbox .line {
+    width: 100%;
+    height: 1px;
+    background-color: #2C2828;
+    margin-top: 35vh;
+} */
+#footer .ftbox2 {
+    height: 50vh;
+    background-color: #E7AACD;
+    display: grid;
+    grid-template-columns: repeat(2,960px);
+    text-align: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #2C2828;
+}
+#footer .ftbox2 .title {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 80px;
+    line-height: 2;
+    
+}
+#footer .ftbox2 .ftboxleft {
+    position: relative;
+    
+
+}
+#footer .ftbox2 .ftboxleft .txt {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 18px;
+    border: 1px solid #2C2828;
+    border-radius: 50px;
+    padding: 10px 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#footer .ftbox2 .ftboxmail {
+    position: relative;
+}
+#footer .ftbox2 .ftboxmail .txt {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 18px;
+    border: 1px solid #2C2828;
+    border-radius: 50px;
+    padding: 10px 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
