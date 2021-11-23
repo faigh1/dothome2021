@@ -922,18 +922,19 @@ li {
 }
 #main .script .top {
     display: inline-block;
+    position: relative;
 
 }
 #main .script iframe {
     text-align: center;
     overflow-x: hidden;
     overflow-y: auto;
-    position: relative;
+    
     border: 3px solid #DDA2A2;
     margin-bottom: 120px;
 }
-#main .script .img {
-    display: inline-block;
+#main .script .top .bear {
+    top: 0;
     margin-left: 20px;
 }
 #main .script .title em {
@@ -955,7 +956,7 @@ li {
 
 #footer {
     margin-top: 200px;
-    height: 200vh;
+    height: 180vh;
     position: relative;
 }
 #footer .ftbox {
@@ -1011,12 +1012,12 @@ li {
     left: 50%;
     transform: translateX(-50%);
 }
-/* #footer .ftbox .line {
-    width: 100%;
-    height: 1px;
+#footer .ftbox2 .line {
+    width: 1px;
+    height: 10vh;
     background-color: #2C2828;
     margin-top: 35vh;
-} */
+}
 #footer .ftbox2 {
     height: 50vh;
     background-color: #E7AACD;
@@ -1061,4 +1062,50 @@ li {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+}
+/* #footer .line {
+    border: 2px solid #2C2828;
+    width: 1px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+} */
+
+#footer #wrap .ftmenu {
+    display: grid;
+    grid-template-columns: repeat(4, 170px);
+    
+}
+#footer #wrap .ftmenu img {
+    width: 36px;
+    height: 36px;
+}
+#footer #wrap .ftmenu ul li {
+    margin-left: 7px;
+    line-height: 2;
+    font-family: 'EliceDigitalBaeum_Bold';
+}
+#footer #wrap .thanks {
+    /* display: flex; */
+    text-align: center;
+    position: relative;
+}
+
+#footer #wrap .thanks .me {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#footer #wrap .thanks .txt {
+    font-size: 18px;
+    font-family: 'EliceDigitalBaeum_Bold';
+}
+#footer #wrap {
+    display: flex;
+    justify-content: space-between;
+}
+#footer #wrap .thanks .flower {
+    position: absolute;
+    top: 0;
+    left: 5%;
 }
