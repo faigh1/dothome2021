@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+$colors: #F5BAC4, #B2D4D8, #F5D8D8;
+
+
+.square {
+  width: 1920px;
+  border-radius: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.light {
+  width: 14px;
+  height: 14px;
+  border-radius: 100px;
+  background: #F5BAC4;
+  position: relative;
+  float: left;
+  transition: all .5s ease;
+}
+.light:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 120px;
+  height: 120px;
+  margin-top: -50px;
+  margin-left: -50px;
+  z-index: 0;
+  border-radius: 100px;
+}
+
+.light:nth-child(3n+150) {
+    margin-left: 38px;
+    -webkit-animation: orbit 6s linear -14s infinite;
+    animation: orbit 6s linear -14s infinite;
+    background: #B2D4D8;
+    background: url(../img/babypinkbear.svg) center center;
+
+    &:hover:after {
+        background: #fff;
+        opacity: 0.4;
+    }
+}
+
+@for $i from 1 through 200 {
+  .light:nth-child(#{length($colors)}n + #{$i}) {
+    margin-left: random(1000) + px;
+    animation: orbit 6s linear (random($i) + -150s) infinite;
+    background: nth($colors, random(length($colors)));
+  }
+
+  .light:hover:after {
+    background: #ffffff;
+    opacity: .1;
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(5px) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) translateX(5px) rotate(-180deg) scale(.25);
+  }
+  100% {
+    transform: rotate(360deg) translateX(5px) rotate(-360deg) scale(1);
+  }
+}
