@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/circle.css">
+
+    <style>
+        .style4 {
+            border: 1px solid rgba(0, 35, 63, 0.287);
+            background-image: url(../assets/img/bear.png);
+            opacity: 0.9;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>SONG JI WON</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Reference</a></li>
+                <li><a href="#">Site</a></li>
+                <li><a href="#">Animation</a></li>
+                <li><a href="#">Script</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <div id="contents">
+        <section id="section1">
+            <div class="sec1">
+
+                
+                <div class="title">
+                    <p class="text">안녕하세요! <em>원에 마우스를 올려주세요!</em></p>
+                    <h1>#PORTFOLIO</h1>
+                </div>
+            </div>
+            <div class="square"></div>
+        </section>
+        <!-- //section1 -->
+
+        <section id="section2"></section><!-- //section2 -->
+        <section id="section3"></section><!-- //section3 -->
+        <section id="section4"></section><!-- //section4 -->
+        <section id="section5"></section><!-- //section5 -->
+        <section id="section6"></section><!-- //section6 -->
+    </div>
+    <!-- //contents -->
+
+    <script>
+
+    var el = document.getElementsByClassName("square")[0];
+
+        for (i = 1; i <= 200; i++) {
+        elChild = document.createElement("div");
+        elChild.setAttribute("id", i);
+        elChild.setAttribute("class", "light");
+        el.appendChild(elChild);
+    }
+
+
+    document.getElementById("115").addEventListener("mouseover", () => {
+        document.querySelector(".title .text em").innerHTML = "방갑습니다.";
+    });
+    
+
+
+
+    </script>
+</body>
+</html>
