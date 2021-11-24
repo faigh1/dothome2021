@@ -1,0 +1,99 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none; color: #000;}
+em {font-style: normal;}
+body {overflow-x: hidden; overflow-y: auto;}
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* layout */
+#contents {}
+#section1 {
+    height: 100vh;
+    background: url(https://faigh1.github.io/dothome2021/portfolio/assets/img/hello-mainimg.png) center center no-repeat;
+    background-size: cover;
+}
+#section2 {
+    height: 2000px;
+
+}
+
+#section3 {}
+
+#section4 {}
+
+#section5 {}
+
+/* header */
+#header {
+    position: fixed;
+    left: 0px; top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'EliceDigitalBaeum_Regular';
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+#header h1 {
+    color: #fff;
+    padding: 3vw;
+}
+#header .nav {
+    padding: 3vw;
+    text-align: right;
+}
+#header .nav a {
+    color: #fff;
+    display: block;
+    margin-top: 25px;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+#header .nav a::after {
+    content: "";
+    background: url(https://faigh1.github.io/dothome2021/portfolio/assets/img/plus.svg) no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 25px;
+    width: 20px; height: 20px;
+}
+
+/* sec1 */
+.sec1 {
+}
+.sec1 .title {
+    position: absolute;
+    left: 2vw; bottom: 0;
+}
+.sec1 .title h1 {
+    font-size: 14vw;
+    line-height: 1;
+    font-family: 'yg-jalnan';
+    color: #fff;
+}
+.sec1 .title .text {
+    font-family: 'Cafe24SsurroundAir';
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: right;
+    font-size: 30px;
+    margin-left: 10px;
+
+}
+
+
+
+
+
