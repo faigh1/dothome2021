@@ -1,7 +1,6 @@
 @charset "utf-8";
 
-$colors: #F5BAC4, #B2D4D8, #F5D8D8;
-
+$colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8; 
 
 .square {
   width: 1920px;
@@ -20,6 +19,7 @@ $colors: #F5BAC4, #B2D4D8, #F5D8D8;
   position: relative;
   float: left;
   transition: all .5s ease;
+  opacity: 1;
 }
 .light:after {
   content: '';
@@ -31,23 +31,9 @@ $colors: #F5BAC4, #B2D4D8, #F5D8D8;
   margin-top: -50px;
   margin-left: -50px;
   z-index: 0;
-  border-radius: 100px;
 }
 
-.light:nth-child(3n+150) {
-    margin-left: 38px;
-    -webkit-animation: orbit 6s linear -14s infinite;
-    animation: orbit 6s linear -14s infinite;
-    background: #B2D4D8;
-    background: url(../img/babypinkbear.svg) center center;
-
-    &:hover:after {
-        background: #fff;
-        opacity: 0.4;
-    }
-}
-
-@for $i from 1 through 200 {
+@for $i from 1 through 218 {
   .light:nth-child(#{length($colors)}n + #{$i}) {
     margin-left: random(1000) + px;
     animation: orbit 6s linear (random($i) + -150s) infinite;
@@ -56,7 +42,15 @@ $colors: #F5BAC4, #B2D4D8, #F5D8D8;
 
   .light:hover:after {
     background: #ffffff;
-    opacity: .1;
+    background: url(../img/babypinkbear.svg) no-repeat center center;
+  }
+  .light:nth-child(104):hover:after {
+    background: url(../img/siteimg3-bear.svg) no-repeat center center;
+    opacity: 1;
+  }
+  .light:nth-child(71):hover:after {
+    background: url(../img/babypinkbear.svg) no-repeat center center;
+    opacity: 1;
   }
 }
 
