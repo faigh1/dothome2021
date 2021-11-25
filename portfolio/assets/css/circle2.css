@@ -1818,20 +1818,6 @@
     opacity: 0.4;
 }
 
-.light:nth-child(3n+115) {
-    margin-left: 38px;
-    -webkit-animation: orbit 6s linear -14s infinite;
-    animation: orbit 6s linear -14s infinite;
-    background: #B2D4D8;
-    background: url(https://faigh1.github.io/dothome2021/portfolio/assets/img/me.png) center center;
-}
-
-.light:hover:after {
-    background: #fff;
-    opacity: 0.4;
-}
-
-
 @keyframes orbit {
     0% {
         transform: rotate(0deg) translateX(5px) rotate(0deg) scale(1);
@@ -1839,19 +1825,6 @@
 
     50% {
         transform: rotate(180deg) translateX(5px) rotate(-180deg) scale(.25);
-    }
-
-    100% {
-        transform: rotate(360deg) translateX(5px) rotate(-360deg) scale(1);
-    }
-}
-@keyframes orbit2 {
-    0% {
-        transform: rotate(0deg) translateX(5px) rotate(0deg) scale(1);
-    }
-
-    50% {
-        transform: rotate(180deg) translateX(5px) rotate(-180deg) scale(1.1);
     }
 
     100% {

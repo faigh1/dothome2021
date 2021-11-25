@@ -15,13 +15,20 @@ body {overflow-x: hidden; overflow-y: auto;}
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /* layout */
 #contents {}
 #section1 {
     height: 100vh;
     background: url(https://faigh1.github.io/dothome2021/portfolio/assets/img/hello-mainimg.png) center center no-repeat;
     background-size: cover;
+    padding: 3vw;
+    /* cursor: url(../img/babypinkbear.svg) 6 6, auto; */
 }
 #section2 {
     height: 2000px;
@@ -40,7 +47,7 @@ body {overflow-x: hidden; overflow-y: auto;}
     left: 0px; top: 0;
     width: 100%;
     box-sizing: border-box;
-    font-family: 'EliceDigitalBaeum_Regular';
+    font-family: 'SBAggroB';
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -48,6 +55,8 @@ body {overflow-x: hidden; overflow-y: auto;}
 #header h1 {
     color: #fff;
     padding: 3vw;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-weight: 100;
 }
 #header .nav {
     padding: 3vw;
@@ -75,24 +84,75 @@ body {overflow-x: hidden; overflow-y: auto;}
 }
 .sec1 .title {
     position: absolute;
-    left: 2vw; bottom: 0;
+    left: 3vw; bottom: 3vh;
 }
 .sec1 .title h1 {
-    font-size: 14vw;
+    font-size: 11.8vw;
     line-height: 1;
-    font-family: 'yg-jalnan';
+    font-family: 'SBAggroB';
     color: #fff;
 }
 .sec1 .title .text {
-    font-family: 'Cafe24SsurroundAir';
+    font-family: 'SBAggroB';
     color: #fff;
     margin-bottom: 40px;
     text-align: right;
-    font-size: 30px;
+    font-size: 2rem;
     margin-left: 10px;
-
+    padding-right: 0.7vw;
+    
 }
-
+.sec1 .title .text a {
+    font-family: 'SBAggroB';
+    font-weight: 100;
+    font-size: 1.7rem;
+    position: absolute;
+    right: 1vw;
+    bottom: 28vh;
+    border: 5px double #fff;
+    border-radius: 50px;
+    padding: 7px 30px 3px;
+    z-index: 10;
+    color: #fff;
+    cursor: url(../img/barredbear.svg) 2 2, auto;
+}
+@media (max-width: 800px) {
+    .sec1 .title .text {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        padding-right: 4vw;
+    }
+    .sec1 .title .text a {
+        bottom: 8vh;
+        font-size: 1.5rem;
+    }
+}
+#section1 .flower {
+    position: absolute;
+    right: 21.5vw;
+    top: 62vh;
+    animation: rotate 10s linear infinite;
+    z-index: 10;
+    transform-origin: 50% 50%;
+}
+#section1 .flower2 {
+    position: absolute;
+    right: 40vw;
+    top: 40vh;
+    animation: rotate2 10s linear infinite;
+    z-index: 10;
+    transform-origin: 50% 50%;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate2 {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
 
 
 
