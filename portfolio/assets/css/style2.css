@@ -3,6 +3,9 @@ li {list-style: none;}
 a {text-decoration: none; color: #000;}
 em {font-style: normal;}
 body {overflow-x: hidden; overflow-y: auto;}
+::selection {background-color: rgba(214, 255, 255, 0.212); color: rgb(255, 203, 203); -webkit-text-stroke: 1px #ffffff;}
+
+::-webkit-scrollbar { width: 15px; } ::-webkit-scrollbar-track { background-color: #b2d4d8a4; } ::-webkit-scrollbar-thumb { background-color: #B2D4D8;}
 @font-face {
     font-family: 'yg-jalnan';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
@@ -28,7 +31,7 @@ body {overflow-x: hidden; overflow-y: auto;}
     background: url(https://faigh1.github.io/dothome2021/portfolio/assets/img/hello-mainimg.png) center center no-repeat;
     background-size: cover;
     padding: 3vw;
-    /* cursor: url(../img/babypinkbear.svg) 6 6, auto; */
+    cursor: url(../img/referimg-diaw.svg) , auto;
 }
 #section2 {
     height: 2000px;
@@ -56,7 +59,7 @@ body {overflow-x: hidden; overflow-y: auto;}
     color: #fff;
     padding: 3vw;
     font-family: 'Encode Sans Expanded', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
 }
 #header .nav {
     padding: 3vw;
@@ -74,7 +77,7 @@ body {overflow-x: hidden; overflow-y: auto;}
     content: "";
     background: url(https://faigh1.github.io/dothome2021/portfolio/assets/img/plus.svg) no-repeat;
     position: absolute;
-    right: 0;
+    right: -0.3vw;
     bottom: 25px;
     width: 20px; height: 20px;
 }
@@ -95,14 +98,14 @@ body {overflow-x: hidden; overflow-y: auto;}
 .sec1 .title .text {
     font-family: 'SBAggroB';
     color: #fff;
-    margin-bottom: 40px;
-    text-align: right;
+    margin-bottom: 4.6vh;
+    text-align: left;
     font-size: 2rem;
     margin-left: 10px;
     padding-right: 0.7vw;
     
 }
-.sec1 .title .text a {
+.sec1 .title a {
     font-family: 'SBAggroB';
     font-weight: 100;
     font-size: 1.7rem;
@@ -114,17 +117,36 @@ body {overflow-x: hidden; overflow-y: auto;}
     padding: 7px 30px 3px;
     z-index: 10;
     color: #fff;
-    cursor: url(../img/barredbear.svg) 2 2, auto;
+    /* cursor: url(../img/barredbear.svg), auto; */
+}
+@media (max-width: 1200px) {
+    .sec1 .title .text {
+        margin-bottom: 2.5vh;
+        font-size: 1.3rem;
+    }
+    .sec1 .title a {
+        bottom: 17.5vh;
+        font-size: 1.1rem;
+    }
+    #section1 .flower {
+        position: absolute;
+        top: 80vh;
+    }
 }
 @media (max-width: 800px) {
     .sec1 .title .text {
-        margin-bottom: 1vw;
-        font-size: 1.5rem;
+        margin-bottom: 2vh;
+        font-size: 1.2rem;
         padding-right: 4vw;
     }
-    .sec1 .title .text a {
-        bottom: 8vh;
-        font-size: 1.5rem;
+    .sec1 .title a {
+        bottom: 16vh;
+        font-size: 1.2rem;
+        right: 1vw;
+    }
+    #header .nav a::after {
+        background: none;
+        bottom: 0;
     }
 }
 #section1 .flower {
