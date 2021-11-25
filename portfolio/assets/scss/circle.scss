@@ -11,6 +11,21 @@ $colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8;
   transform: translate3d(-50%, -50%, 0);
 }
 
+@media(max-width: 800px) {
+  .square {
+    width: 100%;
+    transform: scale(0.1);
+    left: 0;
+    top: 0;
+    transform: translate3d(-15%, 0, 0);
+  }
+  .light:nth-child(n+125):nth-child(-n+218) {
+    display: none;
+  }
+}
+
+
+
 .light {
   width: 14px;
   height: 14px;
@@ -35,7 +50,7 @@ $colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8;
 
 @for $i from 1 through 218 {
   .light:nth-child(#{length($colors)}n + #{$i}) {
-    margin-left: random(1000) + px;
+    margin-left: random(48) + vw;
     animation: orbit 6s linear (random($i) + -150s) infinite;
     background: nth($colors, random(length($colors)));
   }
@@ -51,7 +66,6 @@ $colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8;
   .light:nth-child(71):hover:after {
     background: url(../img/babypinkbear.svg) no-repeat center center;
     opacity: 1;
-  }
 }
 
 @keyframes orbit {
@@ -64,4 +78,5 @@ $colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8;
   100% {
     transform: rotate(360deg) translateX(5px) rotate(-360deg) scale(1);
   }
+}
 }
