@@ -2,7 +2,7 @@
 li {list-style: none;}
 a {text-decoration: none; color: #000;}
 em {font-style: normal;}
-/* body {overflow-x: hidden; overflow-y: auto;} */
+body {overflow-x: hidden; overflow-y: auto;}
 @font-face {
     font-family: 'yg-jalnan';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
