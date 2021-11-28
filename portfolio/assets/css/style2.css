@@ -2,7 +2,7 @@
 li {list-style: none;}
 a {text-decoration: none; color: #000;}
 em {font-style: normal;}
-body {overflow-x: hidden; overflow-y: auto;}
+body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-family: 'EliceDigitalBaeum_Regular';}
 ::selection {background-color: rgba(214, 255, 255, 0.212); color: rgb(255, 203, 203); -webkit-text-stroke: 1px #ffffff;}
 
 ::-webkit-scrollbar { width: 15px; } ::-webkit-scrollbar-track { background-color: #b2d4d8a4; } ::-webkit-scrollbar-thumb { background-color: #B2D4D8;}
@@ -28,13 +28,18 @@ body {overflow-x: hidden; overflow-y: auto;}
 #contents {}
 #section1 {
     height: 100vh;
-    background: url(https://faigh1.github.io/dothome2021/portfolio/assets/img/hello-mainimg.png) center center no-repeat;
+    background: url(../img/mainbg.jpg) center center no-repeat;
     background-size: cover;
     padding: 3vw;
     cursor: url(../img/referimg-diaw.svg) , auto;
+    opacity: 0.8;
+}
+.mainbar {
+    width: 100%;
+    height: 74px;
+    background-color: #F2D4CD;
 }
 #section2 {
-    height: 2000px;
 
 }
 
@@ -70,16 +75,20 @@ body {overflow-x: hidden; overflow-y: auto;}
     display: block;
     margin-top: 25px;
     font-size: 20px;
-    position: relative;
     margin-bottom: 40px;
 }
 #header .nav a::after {
     content: "";
     background: url(https://faigh1.github.io/dothome2021/portfolio/assets/img/plus.svg) no-repeat;
     position: absolute;
-    right: -0.3vw;
+    right: 2.5vw;
     bottom: 25px;
     width: 20px; height: 20px;
+}
+@media (max-width: 800px) {
+    #header h1 {
+        margin-top: 2.2vh;
+    }
 }
 
 /* sec1 */
@@ -177,5 +186,97 @@ body {overflow-x: hidden; overflow-y: auto;}
 }
 
 
+.mainbar{
+    display: flex;
+    align-items: center;
+}
+.mainbar img {
+    height: 34px;
+    margin-right: 75px;
+    animation: bar 25s linear infinite;
+}
+@keyframes bar{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(-50%);}
+    100%{transform: translateX(-100%);}
+}
 
 
+/* section2 */
+#section2 .sec1 {
+    height: 60vh;
+}
+#section2 .sec1 .bear {
+    text-align: center;
+    padding: 20vh 0 1vh 0;
+}
+#section2 .sec1 .txt {
+    font-family: 'EliceDigitalBaeum_Regular';
+    text-align: center;
+    font-size: 2rem;
+}
+
+/*sec2*/
+#section2 .sec2 {
+    position: relative;
+}
+#section2 .sec2 img {
+    margin: 0 45px 0 0;
+    
+}
+#section2 .pd {
+    padding: 0 45px;
+}
+#section2 .sec2 .tt {
+    display: inline-block;
+    vertical-align: top;
+}
+#section2 .tt .num {
+    margin-top: 1vh;
+    font-size: 3rem;
+    color: #F2D4CD;
+    line-height: 1.4;
+}
+#section2 .tt .title {
+    font-family: 'SBAggroB';
+    line-height: 0.9;
+    font-size: 5rem;
+    color: #DDA2A2;
+    margin-bottom: 20px;
+}
+
+#section2 .sec2 .tt .txt {
+    font-size: 1rem;
+}
+#section2 .sec2 .img {
+    position: absolute;
+    right: 0;
+    top: 60vh;
+}
+@media (max-width: 800px) {
+    #section2 .sec2 img {
+        width: 80vw;
+    }
+    #section2 .sec2 .tt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #section2 .sec2 .tt .title {
+        font-size: 3rem;
+    }
+    #section2 .sec2 .tt .num {
+        display: none;
+    }
+    #section2 .sec2 .tt .txt {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+#section2 .sec3 {
+    display: flex;
+    justify-content: space-between;
+}
+#section2 .sec3 .img {
+    text-align: right;
+}
