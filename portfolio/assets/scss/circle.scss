@@ -54,18 +54,6 @@ $colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8;
     animation: orbit 6s linear (random($i) + -150s) infinite;
     background: nth($colors, random(length($colors)));
   }
-
-  .light:hover:after {
-    background: #ffffff;
-    background: url(../img/babypinkbear.svg) no-repeat center center;
-  }
-  .light:nth-child(104):hover:after {
-    background: url(../img/siteimg3-bear.svg) no-repeat center center;
-    opacity: 1;
-  }
-  .light:nth-child(71):hover:after {
-    background: url(../img/babypinkbear.svg) no-repeat center center;
-    opacity: 1;
 }
 
 @keyframes orbit {
@@ -78,5 +66,4 @@ $colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8;
   100% {
     transform: rotate(360deg) translateX(5px) rotate(-360deg) scale(1);
   }
-}
 }
