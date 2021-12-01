@@ -7,43 +7,45 @@
     <title>CSS Search</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <style>
+        /* 엘리스 배움체 */
         @font-face {
-            font-family: 'GyeonggiBatang';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+            font-family: 'EliceDigitalBaeum_Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
         @font-face {
-            font-family: 'TmonMonsori';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff');
+            font-family: 'EliceDigitalBaeum_Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'GyeonggiBatang';
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
         }
         img {
             width: 100%;
         }
         body {
             background:
-            radial-gradient(black 3px, transparent 4px),
-            radial-gradient(black 3px, transparent 4px),
+            radial-gradient(#DDA2A2 3px, transparent 4px),
+            radial-gradient(#DDA2A2 3px, transparent 4px),
             linear-gradient(#fff 4px, transparent 0),
             linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
             linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
             #fff;
             background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
             background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+            font-family: 'EliceDigitalBaeum_Regular';
         }
         .searchWrap {
             width: 80vw;
             min-height: 30vh;
             background-color: #f1f1f6;
-            border: 4px solid #223547;
+            border: 4px solid #c77a7a;
             padding: 4vw 2vw;
             margin: 5vw auto;
             border-radius: 1vw;
@@ -52,15 +54,15 @@
             text-align: center;
         }
         .search span {
-            font-family: 'GyeonggiBatang';
+            font-family: 'EliceDigitalBaeum_Regular';
             font-size: 1.4vw;
-            color: #223547;
+            color: #DDA2A2;
         }
         .search h1 {
-            font-family: 'TmonMonsori';
+            font-family: 'SBAggroB';
             font-size: 4vw;
-            line-height: 2;
-            color: #223547;
+            line-height: 0.8;
+            color: #DDA2A2;
         }
         .search label {
             overflow: hidden;
@@ -71,20 +73,20 @@
             text-indent: -9999px;
         }
         .search input {
-            font-family: 'GyeonggiBatang';
+            font-family: 'EliceDigitalBaeum_Regular';
             font-size: 24px;
-            border: 4px solid #223547;
-            padding: 10px 30px;
+            border: 4px solid #DDA2A2;
+            padding: 5px 30px;
             background: #fff;
             border-radius: 50px;
             width: 50%;
         }
         .search button {
-            font-family: 'GyeonggiBatang';
+            font-family: 'EliceDigitalBaeum_Regular';
             font-size: 24px;
-            border: 4px solid #223547;
-            background: #223547;
-            padding: 10px 30px;
+            border: 4px solid #DDA2A2;
+            background: #DDA2A2;
+            padding: 5px 30px;
             color: #fff;
             border-radius: 50px;
             cursor: pointer;
@@ -103,7 +105,7 @@
             justify-content: space-between;
         }
         .info .time {
-            background: #223547;
+            background: #DDA2A2;
             padding: 10px 20px;
             color: white;
             border-radius: 3px;
@@ -119,14 +121,14 @@
         }
         .answers span {
             display: inline-block;
-            border: 1px solid #223547;
+            border: 1px solid #DDA2A2;
             padding: 10px 20px;
             border-radius: 50px;
             margin: 5px 5px 5px 0;
             transition: all 0.3s;
         }
         .answers span:hover {
-            background: #223547;
+            background: #DDA2A2;
             color: #fff;
         }
         .missAnswers {
@@ -138,8 +140,8 @@
         }
         .missAnswers span {
             display: inline-block;
-            background-color: #223547;
-            border: 1px solid #223547;
+            background-color: #DDA2A2;
+            border: 1px solid #DDA2A2;
             color: #fff;
             padding: 10px 20px;
             border-radius: 50px;
@@ -148,7 +150,7 @@
         }
         .missAnswers span:hover {
             background: #fff;
-            color: #223547;
+            color: #DDA2A2;
         }
         .audio {
             position: absolute;
@@ -157,7 +159,7 @@
         .audio .btn-sound {
             display: block;
             width: 40px; height: 40px;
-            background: #223547;
+            background: #DDA2A2;
             text-align: center;
             line-height: 43px;
             color: #fff;

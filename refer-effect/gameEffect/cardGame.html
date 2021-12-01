@@ -7,15 +7,23 @@
     <title>Card Effect - jQuery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <style>
+        
+        /* 엘리스 배움체 */
         @font-face {
-            font-family: 'Cafe24SsurroundAir';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+            font-family: 'EliceDigitalBaeum_Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-        } 
+        }
         @font-face {
-            font-family: 'Cafe24Dongdong';
-            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Dongdong.woff') format('woff');
+            font-family: 'EliceDigitalBaeum_Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'SBAggroB';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
             font-weight: normal;
             font-style: normal;
         }
@@ -23,20 +31,21 @@
         li {list-style: none;}
         a {text-decoration: none;}
         body {
-            background: #cde2bf;
+            background: #fff1f1;
         }
         /* title */
         .title {
             position: absolute;
             left: 20px; top: 20px;
+            color: #DDA2A2;
         }
         .title h1 {
-            font-family: 'Cafe24SsurroundAir';
+            font-family: 'SBAggroB';
             margin-bottom: 20px;
             font-size: 50px;
         }
         .score {
-            font-family: 'Cafe24SsurroundAir';
+            font-family: 'EliceDigitalBaeum_Regular';
             font-size: 30px;
         }
         /* success */
@@ -55,18 +64,18 @@
             display: none;
         }
         .success h2 {
-            font-family: 'Cafe24Dongdong';
+            font-family: 'SBAggroB';
             font-size: 6vw;
-            color: #fff;
+            color: #FFF;
             margin-bottom: 20px;
         }
         .success .btn-continue {
-            font-family: 'Cafe24SsurroundAir';
+            font-family: 'EliceDigitalBaeum_Regular';
             font-size: 3vw;
-            background: #000;
+            background: #DDA2A2;
             border: 0;
             color: #fff;
-            padding: 1vw 4vw;
+            padding: 1vw 4vw 1vh;
             margin: 1vw;
             cursor: pointer;
             border-radius: 30px;
@@ -88,7 +97,7 @@
         .audio .btn-sound {
             display: block;
             width: 40px; height: 40px;
-            background: #a6c295;
+            background: #DDA2A2;
             text-align: center;
             line-height: 38px;
             border-radius: 50%;
@@ -107,7 +116,7 @@
             border: 6px solid #000;
             border-radius: 1vw;
             padding: 1vw;
-            background-color: rgb(207, 232, 228);
+            background-color: #f4f4f2; 
         }
         .cardWrap.is-disabled {
             pointer-events: none;
@@ -141,7 +150,7 @@
             position: absolute;
             left: 0; top: 0;
             width: 100%; height: 100%;
-            background-color: rgb(161, 208, 200);
+            background-color: #DDA2A2;
             border-radius: .4vw;
             backface-visibility: hidden;
             background-position: center;
@@ -156,34 +165,34 @@
         }
         /* card img */
         .cardWrap .card .front {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/desert.svg);
+            background-image: url(../../assets/img/card.png);
         }
         .card[data-type=img1] .back {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/rhinoceros.svg);
+            background-image: url(../../assets/img/htbl.png);
         }
         .card[data-type=img2] .back {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/gorila.svg);
+            background-image: url(../../assets/img/bell.png);
         }
         .card[data-type=img3] .back {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/hyena.svg);
+            background-image: url(../../assets/img/candy.png);
         }
         .card[data-type=img4] .back {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/cheetah.svg);
+            background-image: url(../../assets/img/tc.png);
         }
         .card[data-type=img5] .back {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/tiger.svg);
+            background-image: url(../../assets/img/rb.png);
         }
         .card[data-type=img6] .back {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/hippopotamus.svg);
+            background-image: url(../../assets/img/lll.png);
         }
         .card[data-type=img7] .back {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/lion.svg);
+            background-image: url(../../assets/img/zf.png);
         }
         .card[data-type=img8] .back {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/black-panther.svg);
+            background-image: url(../../assets/img/zz.png);
         }
         .card[data-type=img9] .back {
-            background-image: url(http://silvery92.dothome.co.kr/assets/img/wolf.svg);
+            background-image: url(../../assets/img/hgr.png);
         }
     </style>
 </head>
@@ -200,7 +209,7 @@
             <audio  id="thema-song" src="../assets/audio/main.mp3" loop="loop"></audio>
         </article>
         <article class="title">
-            <h1>카드 뒤집기 게임</h1>
+            <h1>Card Game</h1>
             <div class="score">
                 <p class="turns">기회 : <span>5</span>번</p>
                 <p class="attempts">시도 : <span>0</span></p>
@@ -411,19 +420,19 @@
                 // 완성 메세지 
                 switch(attemptsCount){
                     case 0  : 
-                        msg = "레벨1... 최고의 실력이네요!";
+                        msg = "PERFECT!";
                         break;
                     case 1 :
-                        msg = "레벨2... 그럭저럭 하시네요~";
+                        msg = "GREAT!";
                         break;
                     case 2 :
-                        msg = "레벨3... 머리가 나쁘시네요~";
+                        msg = "GOOD!";
                         break;
                     case 3 :
-                        msg = "레벨4... 진짜 못하시네!";
+                        msg = "SO SO";
                         break;
                     default :
-                        msg = "^**^";
+                        msg = "TRY AGAIN";
                 }
                 $successMsg.text(msg);
             }

@@ -217,9 +217,24 @@
 	height: 90px;
 	
 }
+
+/* 엘리스 배움체 */
+@font-face {
+    font-family: 'EliceDigitalBaeum_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #contents_tit p {
 	padding:35px 0; 
-	font-family: 'Gaegu', cursive; font-size: 40px;
+	font-family: 'EliceDigitalBaeum_Regular'; font-size: 30px;
 }
 #contents_tit p a {
 	color:#000; 
