@@ -88,19 +88,18 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
 }
 
 /* sec1 */
-.sec1 {
+.main {
 }
-.sec1 .title {
-    position: absolute;
-    left: 3vw; bottom: 3vh;
+.main .title {
+    margin-top: 61vh;
 }
-.sec1 .title h1 {
+.main .title h1 {
     font-size: 11.8vw;
     line-height: 1;
     font-family: 'SBAggroB';
     color: #fff;
 }
-.sec1 .title .text {
+.main .title .text {
     font-family: 'SBAggroB';
     color: #fff;
     margin-bottom: 4.6vh;
@@ -110,7 +109,7 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
     padding-right: 0.7vw;
     
 }
-.sec1 .title a {
+.main .title a {
     font-family: 'SBAggroB';
     font-weight: 100;
     font-size: 1.7rem;
@@ -125,11 +124,11 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
     /* cursor: url(../img/barredbear.svg), auto; */
 }
 @media (max-width: 1200px) {
-    .sec1 .title .text {
+    .main .title .text {
         margin-bottom: 2.5vh;
         font-size: 1.3rem;
     }
-    .sec1 .title a {
+    .main .title a {
         bottom: 17.5vh;
         font-size: 1.1rem;
     }
@@ -139,12 +138,12 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
     }
 }
 @media (max-width: 800px) {
-    .sec1 .title .text {
+    .main .title .text {
         margin-bottom: 2vh;
         font-size: 1.2rem;
         padding-right: 4vw;
     }
-    .sec1 .title a {
+    .main .title a {
         bottom: 16vh;
         font-size: 1.2rem;
         right: 1vw;
@@ -368,5 +367,39 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
 }
 @keyframes no{
     0%{transform: scale(2); opacity: 0;}
+    100%{transform: scale(1); opacity: 1;}
+}
+
+
+
+#contents  {
+    animation: fade 2s linear;
+}
+@keyframes fade{
+    0%{opacity: 0.1;}
+    100%{opacity: 1;}
+}
+#contents #section1 {
+    animation: zoom 1s linear;
+}
+@keyframes zoom{
+    0%{transform: scale(2);}
+    100%{transform: scale(1);}
+}
+#contents #section1 .title {
+    animation: no1 1s;
+}
+@keyframes no1{
+    0%{transform: scale(0); opacity: 0;}
+    25%{transform: scale(2); opacity: 0;}
+    100%{transform: scale(1); opacity: 1;}
+}
+#header {
+    animation: no 1s;
+
+}
+@keyframes no{
+    0%{transform: scale(0); opacity: 0;}
+    25%{transform: scale(2); opacity: 0;}
     100%{transform: scale(1); opacity: 1;}
 }

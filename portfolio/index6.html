@@ -30,20 +30,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;400&display=swap"
         rel="stylesheet">
-    <link rel="preload" href="TuskerGrotesk-7700Bold.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="TuskerGrotesk-7600Semibold.woff2" as="font" type="font/woff2" crossorigin>
 
-    <style>
-        /* 한번에 나타나기 */
-        .sec1 {
-            opacity: 0;
-            transition: all 1s;
-        }
-        .sec1.show {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    
 </head>
 <body>
     <header id="header">
@@ -172,52 +160,7 @@
     <!-- //contents -->
 
     <script>
-    //메인
-    var el = document.getElementsByClassName("square")[0];
-
-        for (i = 1; i <= 218; i++) {
-        elChild = document.createElement("div");
-        elChild.setAttribute("id", i);
-        elChild.setAttribute("class", "light");
-        el.appendChild(elChild);
-    }
-    //텍스트, 꽃
-    document.querySelector("#section1 .flower img").addEventListener("mouseenter", () => {
-        document.querySelector(".title p.text").innerHTML = "THIS SITE IS FRONT-END DEVELOPER’S";
-    });    
     
-    //메뉴
-    $(".mainmenu").mouseover(function () {
-        $(".submenu").slideDown("800");
-    })
-    $(".mainmenu").mouseleave(function () {
-        $(".submenu").slideUp("800");
-    });
-    
-
-    //헤더 메뉴
-    // $('.submenu li').click(function (e) {
-    //     e.preventDefault();
-    //     let target = $(this);
-    //     let index = target.index();
-    //     let section = $('.paraCont > section').eq(index);
-    //     let offset = section.offset().top;
-
-    //     $('html, body').animate({
-    //         scrollTop: offset
-    //     }, 600);
-    // });
-
-    function scrollProgress(){
-        let scrollTop = (document.documentElement.scrollTop || window.scrollY || window.pageYOffset) + window.innerHeight/2;
-
-        //forEach
-        document.querySelectorAll(".sec1").forEach(item => {
-            scrollTop > item.offsetTop ? item.classList.add("show") : item.classList.remove("show");
-        });       
-    }
-
-    window.addEventListener("scroll", scrollProgress);
     </script>
 </body>
 </html>

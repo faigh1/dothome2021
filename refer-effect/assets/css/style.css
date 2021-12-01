@@ -378,6 +378,7 @@ body {
   left: auto;
   right: 0px;
   bottom: 0px;
+  position: fixed;
 }
 
 .info.left {
@@ -933,7 +934,7 @@ body {
 }
 
 .paraCont .content-item .desc {
-  font-size: 6vw;
+  font-size: 5vw;
   line-height: 1.4;
   margin-top: -6vw;
   margin-right: -3vw;

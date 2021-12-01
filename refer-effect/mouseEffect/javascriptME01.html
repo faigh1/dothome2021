@@ -60,50 +60,48 @@
         }
 
         .cursor.style1 {
-            background-color: rgba(255, 118, 136, 0.4);
-            border-color: rgba(255, 118, 136, 0.4);
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: rgba(118, 255, 237, 0.4);
+            transform: scale(2);
         }
 
         .cursor.style2 {
-            background-color: rgba(0, 35, 63, 0.287);
-            border-color: rgba(0, 35, 63, 0.287);
+            background-color: rgba(255, 255, 255, 0.287);
+            border-color: rgba(255, 255, 255, 0.287);
             transform: rotateY(720deg) scale(2);
         }
 
         .cursor.style3 {
-            background-color: rgba(0, 35, 63, 0.287);
-            border-color: rgba(0, 35, 63, 0.287);
-            transform: scale(1.25, 1.25);
-            opacity: 0.7;
+            background-color: rgba(255, 255, 255, 0.287);
+            border-color: rgba(255, 255, 255, 0.287);
+            transform: rotateX(360deg) scale(3);
         }
 
         .cursor.style4 {
             border: 1px solid rgba(0, 35, 63, 0.287);
-            background-image: url(../assets/img/bg06.jpg);
+            background-image: url(../assets/img/bg02.jpg);
             opacity: 0.9;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            transform: scale(2);
+            transform: scale(4);
         }
 
         .cursor.style5 {
             border: 1px solid rgba(0, 35, 63, 0.287);
-            background-image: url(../assets/img/bg08.jpg);
+            background-image: url(../assets/img/bg02.jpg);
             opacity: 0.9;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            transform: scale(2) rotate(5deg);
+            transform: scale(3) rotate(20deg);
             transform-origin: 0 100%;
         }
-
-        .cursor.style6 {}
     </style>
 
 </head>
 
-<body class="bg bg9 blue">
+<body class="bg bg2 blue">
 
     <!-- contents -->
     <main>
@@ -246,41 +244,41 @@
 }
 
 .cursor.style1 {
-    background-color: rgba(255, 118, 136, 0.4);
-    border-color: rgba(255, 118, 136, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(118, 255, 237, 0.4);
+    transform: scale(2);
 }
 
 .cursor.style2 {
-    background-color: rgba(0, 35, 63, 0.287);
-    border-color: rgba(0, 35, 63, 0.287);
+    background-color: rgba(255, 255, 255, 0.287);
+    border-color: rgba(255, 255, 255, 0.287);
     transform: rotateY(720deg) scale(2);
 }
 
 .cursor.style3 {
-    background-color: rgba(0, 35, 63, 0.287);
-    border-color: rgba(0, 35, 63, 0.287);
-    transform: scale(1.25, 1.25);
-    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0.287);
+    border-color: rgba(255, 255, 255, 0.287);
+    transform: rotateX(360deg) scale(3);
 }
 
 .cursor.style4 {
     border: 1px solid rgba(0, 35, 63, 0.287);
-    background-image: url(../assets/img/bg06.jpg);
+    background-image: url(../assets/img/bg02.jpg);
     opacity: 0.9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: scale(2);
+    transform: scale(4);
 }
 
 .cursor.style5 {
     border: 1px solid rgba(0, 35, 63, 0.287);
-    background-image: url(../assets/img/bg08.jpg);
+    background-image: url(../assets/img/bg02.jpg);
     opacity: 0.9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transform: scale(2) rotate(5deg);
+    transform: scale(3) rotate(20deg);
     transform-origin: 0 100%;
 }
 </code></pre>
@@ -334,9 +332,7 @@ document.querySelectorAll(".mouseCont span").forEach((element) => {
             // animate();
             agentCheck();
         }
-
         modal();
-
         //출력용
         window.addEventListener("mousemove", function(e){
             document.querySelector(".clientX").innerText = e.clientX + "px";   
@@ -356,61 +352,6 @@ document.querySelectorAll(".mouseCont span").forEach((element) => {
             let y = e.clientY - 25 + "px";
             document.querySelector(".cursor").style.cssText = "left:" + x + "; top:" + y;
         });
-        // document.querySelector(".mouseCont .style1").addEventListener("mouseover", function(){
-        //     document.querySelector(".cursor").classList.add("style1");
-        // });
-        // document.querySelector(".mouseCont .style1").addEventListener("mouseout", function(){
-        //     document.querySelector(".cursor").classList.remove("style1");
-        // });
-        // document.querySelector(".mouseCont .style2").addEventListener("mouseover", function(){
-        //     document.querySelector(".cursor").classList.add("style2");
-        // });
-        // document.querySelector(".mouseCont .style2").addEventListener("mouseout", function(){
-        //     document.querySelector(".cursor").classList.remove("style2");
-        // });
-        // document.querySelector(".mouseCont .style3").addEventListener("mouseover", function(){
-        //     document.querySelector(".cursor").classList.add("style3");
-        // });
-        // document.querySelector(".mouseCont .style3").addEventListener("mouseout", function(){
-        //     document.querySelector(".cursor").classList.remove("style3");
-        // });
-        // document.querySelector(".mouseCont .style4").addEventListener("mouseover", function(){
-        //     document.querySelector(".cursor").classList.add("style4");
-        // });
-        // document.querySelector(".mouseCont .style4").addEventListener("mouseout", function(){
-        //     document.querySelector(".cursor").classList.remove("style4");
-        // });
-        // document.querySelector(".mouseCont .style5").addEventListener("mouseover", function(){
-        //     document.querySelector(".cursor").classList.add("style5");
-        // });
-        // document.querySelector(".mouseCont .style5").addEventListener("mouseout", function(){
-        //     document.querySelector(".cursor").classList.remove("style5");
-        // });
-        // document.querySelector(".mouseCont .style6").addEventListener("mouseover", function(){
-        //     document.querySelector(".cursor").classList.add("style6");
-        // });
-        // document.querySelector(".mouseCont .style6").addEventListener("mouseout", function(){
-        //     document.querySelector(".cursor").classList.remove("style6");
-        // });
-        //for문
-        // for( let i=1; i<=6; i++ ){
-        //     document.querySelector(".mouseCont .style"+i).addEventListener("mouseover", function(){
-        //         document.querySelector(".cursor").classList.add("style"+i);
-        //     });
-        //     document.querySelector(".mouseCont .style"+i).addEventListener("mouseout", function(){
-        //         document.querySelector(".cursor").classList.remove("style"+i);
-        //     });
-        // }
-        //forEach
-        // document.querySelectorAll(".mouseCont span").forEach((element, index) => {
-        //     element.addEventListener("mouseover", () => {
-        //         document.querySelector(".cursor").classList.add("style"+ (index+1));
-        //     });
-        //     element.addEventListener("mouseout", () => {
-        //         document.querySelector(".cursor").classList.remove("style"+ (index+1));
-        //     });
-        // })
-        //getAtrribute()
         document.querySelectorAll(".mouseCont span").forEach((element) => {
             let style = element.getAttribute("class");
             element.addEventListener("mouseover", () => {
