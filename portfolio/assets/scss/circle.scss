@@ -24,6 +24,11 @@ $colors: rgba(255, 173, 173, 0.5), #B2D4D8, #F5D8D8;
     display: none;
   }
 }
+@media(max-width: 400px) {
+  .light:nth-child(n+160):nth-child(-n+218) {
+    display: none;
+  }
+}
 
 
 

@@ -50,9 +50,11 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
 #contents {}
 #section1 {
     padding: 0 3vw;
-    height: 500vh;
+    height: 310vh;
 }
-#section2 {}
+#section2 {
+    height: 1000vh;
+}
 #section3 {}
 #section4 {}
 #section5 {}
@@ -395,7 +397,7 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
     }
 }
 
-
+/* 어바웃 애니메이션 */
 @keyframes sticker {
     100% {transform: translateY(-30px) rotate(15deg) scale(1);}
 }
@@ -407,4 +409,10 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
 }
 @keyframes sticker4 {
     100% {transform: rotateY(-360deg);}
+}
+
+/* section2 */
+#section2 .sec1 {
+    background-image: url(../img/main.jpg);
+    height: 80vh;
 }
