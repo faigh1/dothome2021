@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-$colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8; 
+$colors: rgba(255, 173, 173, 0.5), #B2D4D8, #F5D8D8; 
 
 .square {
-  width: 1920px;
-  border-radius: 100px;
+  width: 100vw;
+  height: 102vh;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -13,13 +13,14 @@ $colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8;
 
 @media(max-width: 800px) {
   .square {
-    width: 100%;
+    width: 100vw;
+    // height: 102vh;
     transform: scale(0.1);
-    left: 0;
-    top: 0;
-    transform: translate3d(-15%, 0, 0);
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
   }
-  .light:nth-child(n+125):nth-child(-n+218) {
+  .light:nth-child(n+190):nth-child(-n+218) {
     display: none;
   }
 }
@@ -45,7 +46,7 @@ $colors: rgba(255, 182, 182, 0.5), #B2D4D8, #F5D8D8;
   height: 120px;
   margin-top: -50px;
   margin-left: -50px;
-  z-index: 0;
+  z-index: 1;
 }
 
 @for $i from 1 through 218 {
