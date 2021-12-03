@@ -830,8 +830,7 @@ li {
   .boxani2 {
     margin-top: 80px;
     height: 80vh;
-    background-image: linear-gradient(to top, #A18CD1, #FDC2ED);
-    position: relative;
+    
   }
   
   .animation .bar {
@@ -923,7 +922,6 @@ li {
 #main .script .top {
     display: inline-block;
     position: relative;
-
 }
 #main .script iframe {
     text-align: center;
