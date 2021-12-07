@@ -68,6 +68,9 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
 #section6 {
     height: 420vh;
 }
+#section7 {
+    height: 100vh;
+}
 
 
 
@@ -554,10 +557,13 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
 .txtform .view {
     font-family: 'Encode Sans Expanded', sans-serif;
     font-size: 24px;
-    color: #F4F4F2;
     border-radius: 50px;
     padding: 8px 30px 9px;
     background-color: #a7bdd5;
+}
+.txtform .view a {
+    color: #F4F4F2;
+
 }
 #section3 .sec2 .imgform {
     background-image: linear-gradient(to top, #F0D3E3, #F9ECE7, #FFFCEA);
@@ -702,7 +708,10 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
     border-radius: 50px;
     padding: 8px 30px 9px;
     background-color: #DDA2A2;
+}
+#section5 .sec2 .but .gosite a{
     color: #fff;
+
 }
 #section5 .sec2 .but .flower {
     position: absolute;
@@ -951,4 +960,162 @@ body {overflow-x: hidden; overflow-y: auto; background-color: #f4f4f2; font-fami
 #section6 .sec2 .top .bear {
     position: absolute;
     top: 6.2vh;
+}
+
+
+#footer {
+    margin-top: 200px;
+    height: 180vh;
+    position: relative;
+}
+#footer .ftbox {
+    height: 97vh;
+    background-color: #E7AACD;
+    /* position: relative; */
+    border-bottom: 1px solid #2C2828;
+}
+
+#footer .ftimg1 {
+    position: absolute;
+    top: -5%;
+    left: 5%;
+}
+#footer .ftimg2 {
+    position: absolute;
+    top: -5%;
+    right: 20%;
+}
+#footer .ftimg3 {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+#footer .ftimg4 {
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+#footer .ftimg5 {
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+#footer .ftimg6 {
+    position: absolute;
+    top: 35.22%;
+    right: 15%;
+}
+#footer .ftbox .contact {
+    padding: 35vh 0 15vh;
+    text-align: center;
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 80px;
+}
+#footer .ftbox .ready {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 18px;
+    border: 1px solid #2C2828;
+    border-radius: 50px;
+    padding: 10px 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#footer .ftbox2 .line {
+    width: 1px;
+    height: 10vh;
+    background-color: #2C2828;
+    margin-top: 35vh;
+}
+#footer .ftbox2 {
+    height: 50vh;
+    background-color: #E7AACD;
+
+    text-align: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #2C2828;
+}
+#footer .ftboxb {
+    padding-top: 13vh;
+    display: flex;
+    justify-content: space-around;
+}
+#footer .ftbox2 .title {
+    font-family: 'Tusker Grotesk 7700';
+    font-size: 80px;
+    line-height: 2;
+    
+}
+#footer .ftbox2 .ftboxleft {
+    position: relative;
+    
+
+}
+#footer .ftbox2 .ftboxleft .txt {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 18px;
+    border: 1px solid #2C2828;
+    border-radius: 50px;
+    padding: 5px 9px 6px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#footer .ftbox2 .ftboxmail {
+    position: relative;
+}
+#footer .ftbox2 .ftboxmail .txt {
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 18px;
+    border: 1px solid #2C2828;
+    border-radius: 50px;
+    padding: 5px 9px 6px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#wrap {
+    padding: 45px;
+}
+
+#footer #wrap .ftmenu {
+    display: grid;
+    grid-template-columns: repeat(4, 170px);
+    
+}
+#footer #wrap .ftmenu img {
+    width: 36px;
+    height: 36px;
+}
+#footer #wrap .ftmenu ul li {
+    margin-left: 7px;
+    line-height: 2;
+    font-family: 'EliceDigitalBaeum_Bold';
+}
+#footer #wrap .thanks {
+    /* display: flex; */
+    text-align: center;
+    position: relative;
+}
+
+#footer #wrap .thanks .me {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+#footer #wrap .thanks .txt {
+    font-size: 18px;
+    font-family: 'EliceDigitalBaeum_Bold';
+}
+#footer #wrap {
+    display: flex;
+    justify-content: space-between;
+}
+#footer #wrap .thanks .flower {
+    position: absolute;
+    top: 0;
+    left: 5%;
 }
